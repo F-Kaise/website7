@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* 背景画像 */
+.main-visual{ /* index以外の背景画像非表示 */
+  /* background-image: url;<img src="images/latop2.png" alt="LA表紙"> */
+  background-image: url(images/latop.png);
+  background-repeat: no-repeat;/* 繰り返しを防止 */
+  background-size: contain;/* 枠内に収める場合（または cover） */
+  background-position: center;/* 位置の調整（必要に応じて） */
+  width: 100%;
+  height: 60vh;
+
+  /* 上下の余白を追加 */
+  margin-top: 10px;    /* 上の文字との間隔 */
+  margin-bottom: 10; /* 下の文字との間隔 */
+}
+/* ロゴを含むaタグを横並び＆中央寄せにする */
+h1.align-center a {
+  display: flex;         /* 横並びにする */
+  justify-content: center; /* 全体を中央寄せにする */
+  align-items: center;    /* 画像と文字の縦位置を揃える */
+  text-decoration: none;  /* リンクの下線を消す（必要に応じて） */
+}
+
+/* ロゴ画像と文字の間隔を調整する */
+.logo {
+  margin-right: 10px;    /* 画像の右側に少し隙間を作る */
+  height: auto;          /* 高さは自動調整 */
+  /* 必要であれば width: 50px; などで画像の大きさを指定 */
+}
+
+/* 追加したロゴテキストのスタイル */
+.logo-text {
+  font-size: 2rem;       /* 文字の大きさを調整 */
+  color: #333;           /* 文字の色を調整 */
+  font-weight: bold;     /* 文字を太くする（必要に応じて） */
+}
+
+/* すべてのリンク（またはロゴ内のリンク）の下線を消す */
+a {
+  text-decoration: none;
+}
+
+ /* センターリング 文字色 */
+h1{
+  text-align: center;
+}
+h1{
+  color:blue;
+}
+/* 見出し同士や要素同士の間隔（縦の余白）を広くする */
+h1 {
+  margin-bottom: 1.5rem; /* ロスに行こう！の下の余白 */
+}
+h2{
+  text-align: center;
+}
+h2{
+  color: blue;
+}
+h2 {
+  margin-bottom: 2rem;   /* Los Angeles is waiting for you. の下の余白 */
+}
+
+h4{
+  color: black;
+  text-align: center;
+}
+/* 画像下の文章の中央寄せ */
+h4, p {
+  text-align: center;
+}
+
+ /* nav横整列 */
+ .main-nav {
+display: flex;
+justify-content: center;
+gap: 2.5rem;
+font-size: 1.5rem;
+list-style:none;
+ padding: 0; /* ← これを追加 */
+ margin: 0;  /* 上下の余白もリセットしたい場合は追加 */
+ }
+
+ /* ← ボタン色 */
+ .main-nav a{
+  color:red;
+ }
+ /* ← ボタンマウス合わせ時色 */
+ .main-nav a:hover{
+  color:rgb(51, 3, 245);
+ }
+
+/* tourismページ */
+.cover-tourism{
+background-image: url(../images);
+}
+
+/* CSSグリッドtourism画像表示 */
+.container {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+gap: 10px;
+  grid-template-rows: 350px 350px;
+   /* 画像間のスペース */
+
+  /* 画像と上下の文字とのスペースを広げる設定 */
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* 共通設定 */
+.grid-item {
+  background-size: cover;    /* マス全体を覆うように拡大縮小 */
+  background-position: center; /* 中央を中心に表示 */
+  color: #fff;
+}
+
+/* マスごとに異なる画像を指定 */
+/* .item1 { background-image: url("images/Dodger_Stadium.JPG"); } */
+/* .item2 { background-image: url("images/Dodger_Stadium2.jpg"); } */
+/* .item3 { background-image: url("images/mural.jpg"); } */
+/* .item4 { background-image: url("images/michcel stone.jpg"); } */
+/* .item5 { background-image: url("images/tom c stone.jpg"); } */
+/* .item6 { background-image: url("images/yoshiki stone.jpg"); } */
+
+/* ===================================
+   Tourism ページの画像
+　 =================================== */
+.tourism1 { background-image: url("images/hollywood_sign.jpg"); }
+.tourism2 { background-image: url("images/santa_monica.jpg"); }
+.tourism3 { background-image: url("images/Griffith Observatory.jpg"); }
+.tourism4 { background-image: url("images/beverly_hills.jpg"); }
+.tourism5 { background-image: url("images/dolby_theatre.jpg"); }
+.tourism6 { background-image: url("images/rodeo_drive.jpg"); }
+
+
+/* ===================================
+   Entertainment ページの画像
+   =================================== */
+.entertainment1 { background-image: url("images/dodger_stadium.jpg"); }
+.entertainment2 { background-image: url("images/dodger_stadium2.jpg"); }
+.entertainment3 { background-image: url("images/mural.jpg"); }
+.entertainment4 { background-image: url("images/michcel stone.jpg"); }
+.entertainment5 { background-image: url("images/tom c stone.jpg"); }
+.entertainment6 { background-image: url("images/yoshiki stone.jpg"); }
+
+
+/* ===================================
+   Food ページの画像
+   =================================== */
+.Food1 { background-image: url("images/in-n-out_burger.jpg"); }
+.Food2 { background-image: url("images/The_pinks.jpg"); }
+.Food3 { background-image: url("images/eggslut .jpg"); }
+.Food4 { background-image: url("images/in-n-out_shop.jpg"); }
+.Food5 { background-image: url("images/The_pinks shop.jpg"); }
+.Food6 { background-image: url("images/eggslut shop.jpg"); }
+
+/* ===================================
+   traffic ページの画像
+   =================================== */
+.Traffic1 { background-image: url("images/waymo.jpg"); }
+.Traffic2 { background-image: url("images/ancels_flicht2.jpg"); }
+.Traffic3 { background-image: url("images/tesra.jpg"); }
+.Traffic4 { background-image: url("images/d-bus.jpg"); }
+.Traffic5 { background-image: url("images/subway.jpg"); }
+.Traffic6 { background-image: url("images/union_station.jpg"); }
+
+/* サイト内のすべての画像（または該当エリアの画像）の角を丸める */
+img {
+  border-radius: 15px; /* 数値を大きくするほど丸みが強くなります */
+}
+.item {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}
+
+/* 画像説明追加 */
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+ /* 画像の下に文字を入れる */
+.grid-item {
+  position: relative;
+  margin-bottom: 30px; /* 下の文字が入るスペースを確保 */
+  
+}
+
+.caption {
+  position: absolute;
+  top: 100%; /* 画像枠のすぐ下に配置 */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 20px;
+  color: #333;
+}
+/* Youtube Google map：横並び＆画面中央寄せ */
+.sns {
+  display: flex;
+  justify-content: center; /* 横方向の中央寄せ */
+  align-items: flex-start; /* 上揃え */
+  gap: 30px;               /* コンテンツ同士の間隔 */
+  margin: 40px auto;       /* 上下に余白を取り、全体を中央に配置 */
+  max-width: 1100px;       /* 全体の最大幅 */
+  width: 90%;
+}
+
+/* Youtube Google map：等しい幅に設定 */
+.sns .sns-item {
+  flex: 1;                 /* 幅を1:1で均等に保持 */
+  max-width: 500px;        /* 各要素の最大幅（お好みで調整） */
+}
+
+/* iframe（YouTube・Map）のサイズを完全に統一 */
+.sns iframe {
+  width: 100%;             /* 親要素の幅いっぱいに広げる */
+  height: 300px;           /* 高さを統一（お好みで調整） */
+  border: none;
+}
